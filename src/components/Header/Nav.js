@@ -29,7 +29,7 @@ const Nav = () => {
                 <Links/>
              </Item>
          </Grid>
-         <Grid item xs={1} style={{marginLeft:'2vw'}}>
+         <Grid item xs={1.7} style={{marginLeft:'2vw'}}>
               <Item>
                  <ToggleMode/>
               </Item>
