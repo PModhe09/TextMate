@@ -16,6 +16,13 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route/>
       </Routes>
+
+        // <Routes>
+        //   <Route path="/" element={<Home />} />
+        //   <Route path="/text-enhancer" element={<TextEnhancer />} />
+        //   <Route path="/grammar-punctuation-enhancer" element={<Grammar />} />
+        //   <Route path="/text-analyzer" element={<TextAnalyzer />} />
+        // </Routes>
   );
 }
 
