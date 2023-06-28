@@ -2,7 +2,9 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Configuration, OpenAIApi } from 'openai';
-import './TextEnhancer.css';
+
+// Add CSS to this sheet
+// import './TextEnhancer.css'; 
 
 
 function TextEnhancer() {
