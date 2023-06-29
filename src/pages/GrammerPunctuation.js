@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Configuration, OpenAIApi } from 'openai';
-
-/* CSS ADDing */ 
-// import './Grammar.css';
-
+import Nav from '../components/Header/Nav';
+import MenuBar from '../components/MenuBar/MenuBar';
 
 function Grammar() {
-
-  const location = useLocation();
-  const { apiKey } = location.state;
-
   const configuration = new Configuration({
-    apiKey: apiKey,
+    apiKey: "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",
   });
   const openai = new OpenAIApi(configuration);
 
@@ -47,26 +41,33 @@ function Grammar() {
   };
 
   return (
-    <div className="Grammar">
-      <h2>Grammar-Punctuation-Enhancer</h2>
-      <div className="box-container">
-        <div className="input-box">
-        <h3>Input:</h3>
+    <div className="text-center">
+      <Nav />
+      <MenuBar />
+      <h1 className="text-3xl font-bold m-4 p-2">Grammar-Punctuation-Enhancer</h1>
+      <div className="flex justify-center items-center mt-8">
+        <div className="w-3/5 p-4">
+        <h3 className="text-lg font-bold " >Input</h3>
           <textarea
             placeholder="Type a message..."
             value={inputValue}
             onChange={handleInputChange}
+            className="w-full h-48 p-4 text-lg border-2 border-gray-300 rounded"
           />
         </div>
-        <button onClick={handleMessageSend}>Send</button>
-        <div className="output-box">
-          <h3>Output:</h3>
-          <div className="output">{outputValue}</div>
+        <button
+          onClick={handleMessageSend}
+          className="px-6 py-3 bg-gray-800 text-white rounded cursor-pointer"
+        >
+          Send
+        </button>
+        <div className="w-full p-4">
+        <h3 className="text-lg font-bold " >Output</h3>
+          <div className="h-48 p-4 border-2 border-gray-300 rounded">{outputValue}</div>
         </div>
       </div>
     </div>
   );
 }
-
 
 export default Grammar;

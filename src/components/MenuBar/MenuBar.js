@@ -19,7 +19,7 @@ const MenuBar = () => {
      <div >
         <Grid container spacing={1} >
             <Grid item xs={4} sm={4} md={4} lg={4}>
-               <Link to='/'>
+               <Link to='/grammar-punctuation-enhancer'>
                   <Item>Grammer</Item>
                </Link>
             </Grid>
@@ -34,7 +34,6 @@ const MenuBar = () => {
               </Link>
             </Grid>
         </Grid>
-bjkb
      </div>
   )
 }
