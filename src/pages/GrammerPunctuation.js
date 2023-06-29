@@ -21,13 +21,13 @@ function Grammar() {
     if (inputValue.trim() !== '') {
       try {
         const response = await openai.createCompletion({
-          model: 'text-davinci-003',
-          prompt: `Fix the grammar in the following text:\n\n ${inputValue}`,
-          temperature: 1,
-          max_tokens: 256,
-          top_p: 1,
-          frequency_penalty: 0,
-          presence_penalty: 0,
+          model: "text-davinci-003",
+          prompt: `Correct this to standard English:\n\n ${inputValue}`,
+          temperature: 0,
+          max_tokens: 60,
+          top_p: 1.0,
+          frequency_penalty: 0.0,
+          presence_penalty: 0.0,
         });
 
         const enhancedText = response.data.choices[0].text;
