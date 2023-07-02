@@ -2,8 +2,8 @@ import React from 'react'
 
 const Title = () => {
   return (
-    <div style={{display:'flex',justifyContent:'flex-start',alignItems:'flex-start',paddingLeft:'5vw'}}>
-      TextMate
+    <div>
+      <span className=' capitalize  text-xl overline flex justify-start items-start pl-10' style={{display:'inline'}}>TextMate</span> <span className='text-l ml-6' style={{display:'inline'}}> Best Text Enhancer tool</span>
     </div>
   )
 }

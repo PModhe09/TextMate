@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom';
 import { Configuration, OpenAIApi } from 'openai';
-import Nav from '../components/Header/Nav';
-import MenuBar from '../components/MenuBar/MenuBar';
+import apiKey from '../Key';
 
 function TextEnhancer() {
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: apiKey,
   });
   const openai = new OpenAIApi(configuration);
 
@@ -47,8 +45,6 @@ function TextEnhancer() {
 
   return (
     <div className="text-center">
-      <Nav />
-      <MenuBar />
       <h1 className="text-3xl font-bold underline mt-8">Text Enhancer</h1>
       <div className="flex flex-col items-center mt-8">
         <div className="w-full px-8">

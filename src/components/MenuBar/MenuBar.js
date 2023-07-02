@@ -2,35 +2,43 @@ import {React} from 'react'
 import { Grid,Paper } from '@mui/material'
 import { styled } from '@mui/material/styles';
 
+
+
 import { Link } from 'react-router-dom';
 
+const commonStyles = {
+  borderColor: 'text.primary',
+  border: 2,
+};
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+
+
+const MenuBar = ({isDark,setDark}) => {
+
+  const Item = styled(Paper)(({ theme }) => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#4834d4' : '#a29bfe',
     ...theme.typography.body2,
-    padding: theme.spacing(1),
+    padding: theme.spacing(1.5),
     textAlign: 'center',
-    color: theme.palette.text.secondary,
+    color: theme.palette.text.primary,
   }));
 
-const MenuBar = () => {
-
   return (
-     <div >
-        <Grid container spacing={1} >
-            <Grid item xs={4} sm={4} md={4} lg={4}>
+     <div className='mt-4'>
+        <Grid container spacing={2}  >
+            <Grid item xs={4} sm={4} md={4} lg={4} >
                <Link to='/grammar-punctuation-enhancer'>
-                  <Item>Grammer</Item>
+                  <Item  sx={{ ...commonStyles }}>Grammer</Item>
                </Link>
             </Grid>
-            <Grid item xs={4} sm={4} md={4} lg={4}>
+            <Grid item xs={4} sm={4} md={4} lg={4} >
               <Link to='/text-enhancer'>
-                  <Item>Text Enhancer</Item>
+                  <Item  sx={{ ...commonStyles }}>Text Enhancer</Item>
               </Link>
             </Grid>
-            <Grid item xs={4} sm={4} md={4} lg={4}>
+            <Grid item xs={4} sm={4} md={4} lg={4} >
               <Link to='/text-analyzer'>
-                  <Item>Text Analyzer</Item>
+                  <Item  sx={{ ...commonStyles }}>Text Analyzer</Item>
               </Link>
             </Grid>
         </Grid>

@@ -1,11 +1,15 @@
 import React from 'react'
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 
-const ToggleMode = () => {
 
+const ToggleMode = ({isDark}) => {
   return(
-    <div>
-       <DarkModeOutlinedIcon/>
+    <div className="text-xl">
+    {isDark === true
+    ?<DarkModeOutlinedIcon/>:<LightModeOutlinedIcon/>
+    }
+       
     </div>
   )
   

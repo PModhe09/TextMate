@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Links = () => {
   return (
-    <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+    <div className="text-xl flex justify-center" >
       <Link to='/about'>
          About
       </Link>
