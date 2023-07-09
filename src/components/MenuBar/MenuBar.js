@@ -27,18 +27,18 @@ const MenuBar = ({isDark,setDark}) => {
      <div className='mt-4'>
         <Grid container spacing={2}  >
             <Grid item xs={4} sm={4} md={4} lg={4} >
-               <Link to='/grammar-punctuation-enhancer'>
+               <Link to='grammar-corrector'>
                   <Item  sx={{ ...commonStyles }}>Grammer</Item>
                </Link>
             </Grid>
             <Grid item xs={4} sm={4} md={4} lg={4} >
               <Link to='/text-enhancer'>
-                  <Item  sx={{ ...commonStyles }}>Text Enhancer</Item>
+                  <Item  sx={{ ...commonStyles }}>Enhancer</Item>
               </Link>
             </Grid>
             <Grid item xs={4} sm={4} md={4} lg={4} >
               <Link to='/text-analyzer'>
-                  <Item  sx={{ ...commonStyles }}>Text Analyzer</Item>
+                  <Item  sx={{ ...commonStyles }}>Analyzer</Item>
               </Link>
             </Grid>
         </Grid>

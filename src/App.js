@@ -12,7 +12,7 @@ import { createTheme } from "@mui/material";
 
 
 
-import { amber, deepOrange, grey,green } from '@mui/material/colors';
+import { amber, grey} from '@mui/material/colors';
 
 const getDesignTokens = (mode) => ({
   palette: {
@@ -63,7 +63,7 @@ const theme1 = createTheme(getDesignTokens(screen));
         <Routes>
           <Route path="/" element={<About/>} />
           <Route path="/text-enhancer" element={<TextEnhancer isDark={isDark} />} />
-          <Route path="/grammar-punctuation-enhancer" element={<Grammar isDark={isDark} />} />
+          <Route path="/grammar-corrector" element={<Grammar isDark={isDark} />} />
           <Route path="/text-analyzer" element={<TextAnalyzer />} />
           <Route path="/about" element={<About/>} />
         </Routes>

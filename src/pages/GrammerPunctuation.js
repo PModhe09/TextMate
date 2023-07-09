@@ -41,28 +41,29 @@ function Grammar({isDark}) {
  console.log(!isDark);
   return (
     <div className="text-center">
-      <h1 className="text-5xl font-bold m-4 p-2 underline mt-14">Grammar-Punctuation-Enhancer</h1>
+      <h1 className="text-3xl font-bold underline mt-8">Grammar-Corrector</h1>
       
-      <div className="flex justify-center items-center mt-8">
-        <div className="w-3/5 p-4">
-        <h3 className="text-lg font-bold " >Input</h3>
+      <div className="flex flex-col items-center  mt-4">
+        <div className="w-full px-8">
+        <h3 className="text-lg font-bold" >Enter your text here </h3>
         {isDark?
           <textarea
             placeholder="Type a message..."
             value={inputValue}
             onChange={handleInputChange}
-            className="w-full h-48 p-4 text-lg border-2 border-white-500 rounded text-black"
-            style={{background:'#2d3436',color:"#fff"}}
+            className="w-full h-60 p-1 text-base border border-gray-300 rounded"
+             style={{background:'#2d3436',color:"#fff"}}
           />
           :
           <textarea
             placeholder="Type a message..."
             value={inputValue}
             onChange={handleInputChange}
-            className="w-full h-48 p-4 text-lg border-2 border-white-500 rounded text-black"
-            style={{background:'#130f40',color:"#fff"}}
+            className="w-full h-60 p-1 text-base border border-gray-300 rounded"
+           style={{background:'#130f40',color:"#fff"}}
           />}
         </div>
+        <br/>
         <button
           onClick={handleMessageSend}
           className="px-6 py-3 bg-gray-800 text-white rounded cursor-pointer"
@@ -70,12 +71,13 @@ function Grammar({isDark}) {
         >
           Send
         </button>
+        <br/>
         <div className="w-full p-4">
         <h3 className="text-lg font-bold " >Output</h3>
          {isDark?
-          <div className="h-48 p-4 border-2 border-white-500 rounded" style={{background:'#2d3436',color:"#fff"}}>{outputValue}</div>
+          <div className="w-full h-60 p-1 text-base border border-gray-300 rounded" style={{background:'#2d3436',color:"#fff"}}>{outputValue}</div>
           :
-          <div className="h-48 p-4 border-2 border-white-500 rounded" style={{background:'#130f40',color:"#fff"}}>{outputValue}</div>}
+          <div className="w-full h-60 p-1 text-base border border-gray-300 rounded" style={{background:'#130f40',color:"#fff"}}>{outputValue}</div>}
         </div>
       </div>
     </div>

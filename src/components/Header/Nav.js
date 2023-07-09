@@ -27,20 +27,20 @@ const Nav = ({isDark,setDark}) => {
       setDark(!isDark);
    }
   return (
-    <div className='mt-1.5'>
+    <div className='mt-1.5 flex-col items-center '>
     {/* {console.log(isDark)} */}
-    <Grid container spacing={10} >
-         <Grid item xs={8}>
+    <Grid container spacing={1} >
+         <Grid item lg={8} md={6} sm={8} xs={7}>
             <Item sx={{ ...commonStyles }}>
                <Title/>
             </Item>
          </Grid>
-         <Grid item xs={2}>
+         <Grid item xs={2} sm={2} xs={3}>
              <Item sx={{ ...commonStyles }}>
                 <Links/>
              </Item>
          </Grid>
-         <Grid item xs={2} onClick={handleClick}>
+         <Grid item xs={2}  sm={2} xs={2}onClick={handleClick}>
              <Item sx={{ ...commonStyles }}>
              <ToggleMode isDark={isDark}/>
              </Item>
