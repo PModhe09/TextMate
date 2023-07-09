@@ -12,7 +12,6 @@
 /build
 
 # api-key
-/src/Key.js
 .env
 
 # misc
