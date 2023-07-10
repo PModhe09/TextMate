@@ -9,13 +9,20 @@ import { styled } from '@mui/material/styles';
 
 
 const commonStyles = {
-   borderColor: 'text.primary',
-   border: 2,
+   // borderColor: '#1D2F3E',
+   // border: 2,
+  
+      margin:'2',
+      padding:'2',
+   "&:hover": {
+      cursor:'pointer',
+      boxShadow: " 0.9px 0.8px 0.9px 0.9px    #FFFCFB",
+    }
  };
 
 const Nav = ({isDark,setDark}) => {
    const Item = styled(Paper)(({ theme }) => ({
-      backgroundColor: theme.palette.mode === 'dark' ? '#4834d4' : '#a29bfe',
+      backgroundColor: theme.palette.mode === 'dark' ? '#1D2F3E' : '#a29bfe',
       ...theme.typography.body2,
       padding: theme.spacing(2.4),
       textAlign: 'center',

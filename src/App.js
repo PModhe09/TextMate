@@ -25,24 +25,24 @@ const getDesignTokens = (mode) => ({
     },
     ...(mode === 'dark' ? {
       background: {
-        default:'#1B1464',
-        paper: '#1B1464',
+        default:'#1D2F3E',
+        paper: '##1D2F3E',
       }
     }:{
       background:{
-      default:'#0984e3',
+      default:'#A0AECD',
       paper: '#0984e3',     
     }
   }),
     text: {
       ...(mode === 'light'
         ? {
-            primary: grey[900],
-            secondary: grey[800],
+            primary: "#111111",
+            secondary: '#111111',
           }
         : {
-            primary: '#fff',
-            secondary: '#111',
+            primary: '#C9E1C1',
+            secondary: '#111111',
           }),
     },
   },

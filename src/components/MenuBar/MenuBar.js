@@ -7,16 +7,19 @@ import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 
 const commonStyles = {
-  borderColor: 'text.primary',
-  border: 2,
+  // borderColor: 'text.primary',
+  // border: 2,
+  fontSize:'2vh',
+  "&:hover": {
+    color: 'white',
+    backgroundColor: '#0f9fff'
+  }
 };
-
-
 
 const MenuBar = ({isDark,setDark}) => {
 
   const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#4834d4' : '#a29bfe',
+    backgroundColor: theme.palette.mode === 'dark' ? '#152737' : '#a29bfe',
     ...theme.typography.body2,
     padding: theme.spacing(1.5),
     textAlign: 'center',
@@ -26,7 +29,7 @@ const MenuBar = ({isDark,setDark}) => {
   return (
      <div className='mt-4'>
         <Grid container spacing={2}  >
-            <Grid item xs={4} sm={4} md={4} lg={4} >
+            <Grid  item xs={4} sm={4} md={4} lg={4} >
                <Link to='grammar-corrector'>
                   <Item  sx={{ ...commonStyles }}>Grammer</Item>
                </Link>
