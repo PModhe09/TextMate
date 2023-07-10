@@ -41,7 +41,7 @@ function Grammar({isDark}) {
  console.log(!isDark);
   return (
     <div className="text-center">
-      <h1 className="text-5xl font-bold underline mt-8">Grammar-Corrector</h1>
+      <h1 className="text-3xl font-bold underline mt-8">Grammar-Corrector</h1>
       
       <div className="flex flex-col items-center  mt-4">
         <div className="w-full px-8">

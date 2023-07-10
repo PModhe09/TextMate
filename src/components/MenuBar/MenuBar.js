@@ -12,7 +12,7 @@ const commonStyles = {
   fontSize:'2vh',
   "&:hover": {
     color: 'white',
-    backgroundColor: '#0f9fff'
+    backgroundColor: '#0984e3'
   }
 };
 
