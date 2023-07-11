@@ -5,7 +5,7 @@ import ToggleMode from './ToggleMode'
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper'
 import { styled } from '@mui/material/styles';
-
+import {Link} from 'react-router-dom'
 
 
 const commonStyles = {
@@ -39,7 +39,9 @@ const Nav = ({isDark,setDark}) => {
     <Grid container spacing={1} >
          <Grid item lg={8} md={6} sm={8} xs={7}>
             <Item sx={{ ...commonStyles }}>
+            <Link to="/">
                <Title/>
+            </Link>
             </Item>
          </Grid>
          <Grid item xs={2} sm={2} xs={3}>
