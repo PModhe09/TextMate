@@ -21,7 +21,7 @@ const getDesignTokens = (mode) => ({
     primary: {
       ...amber,
       ...(mode === 'dark' && {
-        main: grey[300],
+        main: grey[900],
       }),
     },
     ...(mode === 'dark' ? {
@@ -62,7 +62,7 @@ const theme1 = createTheme(getDesignTokens(screen));
       <Nav isDark={isDark} setDark={setDark}/>
       <MenuBar isDark={isDark}/>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Home isDark={isDark}/>} />
           <Route path="/text-enhancer" element={<TextEnhancer isDark={isDark} />} />
           <Route path="/grammar-corrector" element={<Grammar isDark={isDark} />} />
           <Route path="/note-to-summary" element={<TextAnalyzer isDark={isDark}/>} />

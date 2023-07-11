@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
-const Home = () => {
+const Home = ({isDark}) => {
     return (
-        <div className="bg-gray-900 text-#152737 min-h-screen flex items-center">
+        //bg-gray-900 text-#152737
+        <div className=" min-h-screen flex items-center">
             <div className="container mx-auto text-#152737">
                 <div className="mt-20 flex items-center justify-center mb-8">
                     <h1 className="overline text-6xl font-bold">TextMate</h1>
