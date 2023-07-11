@@ -13,6 +13,7 @@ import { createTheme } from "@mui/material";
 
 
 import { amber, grey} from '@mui/material/colors';
+import Home from './pages/Home';
 
 const getDesignTokens = (mode) => ({
   palette: {
@@ -61,10 +62,10 @@ const theme1 = createTheme(getDesignTokens(screen));
       <Nav isDark={isDark} setDark={setDark}/>
       <MenuBar isDark={isDark}/>
         <Routes>
-          <Route path="/" element={<About/>} />
+          <Route path="/" element={<Home/>} />
           <Route path="/text-enhancer" element={<TextEnhancer isDark={isDark} />} />
           <Route path="/grammar-corrector" element={<Grammar isDark={isDark} />} />
-          <Route path="/text-analyzer" element={<TextAnalyzer />} />
+          <Route path="/note-to-summary" element={<TextAnalyzer isDark={isDark}/>} />
           <Route path="/about" element={<About/>} />
         </Routes>
         </CssBaseline>

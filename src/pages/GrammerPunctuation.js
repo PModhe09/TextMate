@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Configuration, OpenAIApi } from 'openai';
-import REACT_APP_API_KEY from '../apiKey';
+// import REACT_APP_API_KEY from '../apiKey';
 
-
+const REACT_APP_API_KEY = "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";
 function Grammar({isDark}) {
   const configuration = new Configuration({
     apiKey: REACT_APP_API_KEY,

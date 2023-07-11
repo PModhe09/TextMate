@@ -31,17 +31,17 @@ const MenuBar = ({isDark,setDark}) => {
         <Grid container spacing={2}  >
             <Grid  item xs={4} sm={4} md={4} lg={4} >
                <Link to='grammar-corrector'>
-                  <Item  sx={{ ...commonStyles }}>Grammer</Item>
+                  <Item  sx={{ ...commonStyles, fontWeight: 'bold'   }}>Grammer</Item>
                </Link>
             </Grid>
             <Grid item xs={4} sm={4} md={4} lg={4} >
               <Link to='/text-enhancer'>
-                  <Item  sx={{ ...commonStyles }}>Enhancer</Item>
+                  <Item  sx={{ ...commonStyles, fontWeight: 'bold'  }}>Enhancer</Item>
               </Link>
             </Grid>
             <Grid item xs={4} sm={4} md={4} lg={4} >
-              <Link to='/text-analyzer'>
-                  <Item  sx={{ ...commonStyles }}>Analyzer</Item>
+              <Link to='/note-to-summary'>
+                  <Item  sx={{ ...commonStyles, fontWeight: 'bold'  }}>Summarizer</Item>
               </Link>
             </Grid>
         </Grid>
