@@ -13,7 +13,7 @@ const Home = ({isDark}) => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                    <img src="../assets/left-image.jpg" alt="left" width="100" height="100" />
+                    {/* <img src="../assets/left-image.jpg" alt="left" width="100" height="100" /> */}
                     <div className="container text-center">
                     {isDark ?
                         <h1 className="text-3xl mb-2">
@@ -38,13 +38,29 @@ const Home = ({isDark}) => {
                         </div> */}
 
                     </div>
-                    <img src="right-image.jpg" alt="Right" className="ml-4" />
+                    {/* <img src="right-image.jpg" alt="Right" className="ml-4" /> */}
                 </div>
 
                 <div className="text-center border-2 mt-40">
                     <h2 className="text-2xl font-bold mt-8">Boost Your Productivity</h2>
                     <p className=" m-4">Save time and effort with our efficient writing tools and automation features.</p>
-                    <div className="grid grid-cols-3 gap-4">
+                    {isDark ?
+                        <div className="flex flex-col">
+                        <div className="bg-gray-100 rounded p-6 flex items-center justify-center m-6">
+                            {/* <span className="text-white text-2xl mr-2">1</span> */}
+                            Grammar Corrector
+                        </div>
+                        <div className="bg-gray-100 rounded p-6 flex items-center justify-center m-6">
+                            {/* <span className="text-white text-2xl mr-2">2</span> */}
+                            Text Enhancer
+                        </div>
+                        <div className="bg-gray-100 rounded p-6 flex items-center justify-center m-6">
+                            {/* <span className="text-white text-2xl mr-2">3</span> */}
+                            Notes to summary Convertor
+                        </div>
+                    </div>
+                     : 
+                     <div className="flex flex-col">
                         <div className="bg-gray-700 rounded p-6 flex items-center justify-center m-6">
                             <span className="text-white text-2xl mr-2">1</span>
                             Grammar Corrector
@@ -58,6 +74,8 @@ const Home = ({isDark}) => {
                             Notes to summary Convertor
                         </div>
                     </div>
+                    }
+                    
                 </div>
 
 
