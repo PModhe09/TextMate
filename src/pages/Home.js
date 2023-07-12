@@ -15,12 +15,20 @@ const Home = ({isDark}) => {
                 <div className="flex justify-center items-center">
                     <img src="../assets/left-image.jpg" alt="left" width="100" height="100" />
                     <div className="container text-center">
+                    {isDark ?
                         <h1 className="text-3xl mb-2">
+                            UNLOCK THE <br className="md:hidden" />
+                            <span className="text-gray-700">[  POWER OF WORDS ]</span> <br className="md:hidden" />
+                            WITH TEXTMATE
+                        </h1>
+                     :  <h1 className="text-3xl mb-2">
                             UNLOCK THE <br className="md:hidden" />
                             <span className="text-gray-400">[  POWER OF WORDS ]</span> <br className="md:hidden" />
                             WITH TEXTMATE
                         </h1>
-                        {/* <p className="mb-10">Improve the quality of your writing with our advanced text enhancement features.</p> */}
+                     }
+                       
+                        <p className="mt-20 text-2xl">Improve the quality of your writing with our advanced text improvement features.</p>
                         {/* <div className="border rounded inline-block p-3 mt-20 bg-gray-900" >
                             <p>
                                 <a href="https://platform.openai.com/account/api-keys" className="hover:text-white">
