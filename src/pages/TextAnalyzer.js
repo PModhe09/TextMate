@@ -33,7 +33,7 @@ function TextAnalyzer({isDark}) {
         setOutputValue(enhancedText);
       } catch (error) {
         console.log('API call error:', error);
-        setOutputValue('Failed to perform grammar correction. Please try again.');
+        setOutputValue('Failed to summarise your text. Please try again.');
       }
     }
   };
