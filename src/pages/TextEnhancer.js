@@ -26,7 +26,7 @@ function TextEnhancer({isDark}) {
       try {
         const response = await openai.createCompletion({
           model: 'text-davinci-003',
-          prompt: `Improve the content and make it more ${selectedOption}. Here is a content - ${inputValue}`,
+          prompt: `Improve the content and make it sound like  ${selectedOption}.DO NOT reply the context of the question of the user input and add only 10-20 more words than provided content .  Here is the provided content - ${inputValue}`,
           temperature: 1,
           max_tokens: 256,
           top_p: 1,

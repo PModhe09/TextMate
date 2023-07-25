@@ -20,7 +20,7 @@ function Grammar({isDark}) {
       try {
         const response = await openai.createCompletion({
           model: "text-davinci-003",
-          prompt: `Correct this to standard English:\n\n ${inputValue}`,
+          prompt: `You are a grammar checker that looks for mistakes and makes sentence’s more fluent. You take all the users input and auto correct it check spelling mistakes,punctuation mistakes and grammatical mistakes also check common english mistakes in speech and writing. Just reply to user input with the correct grammar, DO NOT reply the context of the question of the user input. If the user input is grammatically correct and fluent, just reply “It seems correct to me”. Sample of the conversation will show below: \n\n ${inputValue}`,
           temperature: 0,
           max_tokens: 60,
           top_p: 1.0,

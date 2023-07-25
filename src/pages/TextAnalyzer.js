@@ -20,7 +20,7 @@ function TextAnalyzer({isDark}) {
       try {
         const response = await openai.createCompletion({
           model: "text-davinci-003",
-          prompt: `Convert notes into a paragraph:\n\n ${inputValue}`,
+          prompt: `Convert entered english text to points which are easily to learn , change all the complex vocabulary to common english words , DO NOT reply the context of the question of the user entered english text, user entered text starts from here  :\n\n ${inputValue}`,
           temperature: 0,
           max_tokens: 64,
           top_p: 1.0,
