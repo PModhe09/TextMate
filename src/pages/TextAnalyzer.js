@@ -72,7 +72,7 @@ function TextAnalyzer({isDark}) {
         </button>
         <br/>
         <div className="w-full p-4">
-        <h3 className="text-lg font-bold " >Summary of your notes : </h3>
+        <h3 className="text-lg font-bold " >Summary of the  notes : </h3>
          {isDark?
           <div className="w-full h-60 p-1 text-base border border-gray-300 rounded" style={{background:'#fff',color:"#111"}}>{outputValue}</div>
           :
